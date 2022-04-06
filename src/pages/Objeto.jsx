@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Button, Card, Col, Container, ListGroup, ListGroupItem, Row } from 'react-bootstrap'
+import { Button, Card, Col, Row } from 'react-bootstrap'
 
 const Objeto = () => {
 
@@ -27,7 +27,7 @@ const Objeto = () => {
 
 <Row>
   {carros.map(item => (
-    <Col md = {3}> 
+    <Col md = {3} className="mb-3"> 
       <Card>
         <Card.Img variant="top" src={item.foto} />
         <Card.Body>

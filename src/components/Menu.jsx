@@ -13,7 +13,9 @@ const Menu = () => {
            <Link className="nav-link" to="/carros">Carros</Link>
            <Link className="nav-link" to="/array">Array</Link>
            <Link className="nav-link" to="/objeto">Objeto</Link>
-           <Link className="nav-link" to="/pagina1">Página 1</Link>
+           <Link className="nav-link" to="/pagina1">Página</Link>
+           <Link className="nav-link" to="/contador">Contador</Link>
+           <Link className="nav-link" to="/filmes/populares">Filmes Populares</Link>
          </Nav>
        </Container>
      </Navbar>
