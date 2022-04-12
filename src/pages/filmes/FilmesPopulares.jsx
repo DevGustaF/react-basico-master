@@ -13,7 +13,6 @@ const FilmesPopulares = () => {
             setFilmes(resultado.data.results)
         })
         
-
     }, [])
 
   return (

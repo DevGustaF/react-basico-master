@@ -28,7 +28,7 @@ const FilmesLançamento = () => {
              <Card.Body>
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>Título Original: {item.original_title}</Card.Text>
-                <Card.Text>Popularidade: {item.popularity}</Card.Text>
+                <Card.Text>Data de Lançamento: {item.release_date}</Card.Text>
                 <Link className='btn btn-danger' to={'/filmes/' + item.id}>
                   Ver Detalhes
                 </Link>
