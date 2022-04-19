@@ -1,26 +1,32 @@
 import React from 'react'
-import { Container, Nav, Navbar } from 'react-bootstrap'
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const Menu = () => {
   return (
     <div>
-        
-     <Navbar bg="dark" variant="dark" className="mb-3">
-       <Container>
-         <Navbar.Brand href="#home">Navegar</Navbar.Brand>
-         <Nav className="me-auto">
-           <Link className="nav-link" to="/carros">Carros</Link>
-           <Link className="nav-link" to="/array">Array</Link>
-           <Link className="nav-link" to="/objeto">Objeto</Link>
-           <Link className="nav-link" to="/pagina1">Página</Link>
-           <Link className="nav-link" to="/contador">Contador</Link>
-           <Link className="nav-link" to="/filmes/populares">Filmes Populares</Link>
-           <Link className="nav-link" to="/filmes/lancamentos">Lançamentos</Link>
-           <Link className="nav-link" to="/filmes/cartaz">Filmes em Cartaz</Link>
-         </Nav>
-       </Container>
-     </Navbar>
+
+      <Navbar bg="dark" variant="dark" className="mb-3">
+        <Container>
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+            <Link className="nav-link" to="/carros">Carros</Link>
+            <Link className="nav-link" to="/array">Array</Link>
+            <Link className="nav-link" to="/objeto">Objeto</Link>
+            <Link className="nav-link" to="/pagina1">Página 1</Link>''
+            <NavDropdown title="Filmes" className="show" id="basic-nav-dropdown">
+              <Link className="dropdown-item" to="/filmes/populares">Populares</Link>
+              <Link className="dropdown-item" to="/filmes/cartaz">Cartaz</Link>
+              <Link className="dropdown-item" to="/filmes/lancamento">Lançamento</Link>
+            </NavDropdown>
+            <NavDropdown title="Séries de TV" className="show" id="basic-nav-dropdown">
+              <Link className="dropdown-item" to="/series/populares">Populares</Link>
+              <Link className="dropdown-item" to="/series/noar">No Ar</Link>
+              <Link className="dropdown-item" to="/series/estrelando">Estreias</Link>
+            </NavDropdown>
+          </Nav>
+        </Container>
+      </Navbar>
 
     </div>
   )
